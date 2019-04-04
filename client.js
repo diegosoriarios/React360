@@ -10,13 +10,24 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
 
-  // Render your app content to the default cylinder surface
+  /*
+  * Cria uma nova surface(width, height, shape)
+  * adiciona um para a surface
+  */
   const firstPanel = new Surface(1000, 600, Surface.SurfaceShape.Flat);
   firstPanel.setAngle(0, 0);
   
+  /*
+  * Cria uma nova surface(width, height, shape)
+  * adiciona um para a surface
+  */
   const secondPanel = new Surface(1000, 600, Surface.SurfaceShape.Flat);
   secondPanel.setAngle(3.1, 0);
   
+  /*
+  * Depois de ter registrado os componentes no arquivo index.js
+  * renderiza os arquivos, adicionando em cada surface
+  */
   r360.renderToSurface(
     r360.createRoot('Hello360'),
     firstPanel,
