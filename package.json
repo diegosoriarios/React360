@@ -22,7 +22,7 @@
     "react-native": "^0.61.2",
     "set-value": "^3.0.1",
     "three": "^0.87.0",
-    "ws": "^7.1.2"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "babel-jest": "^19.0.0",
